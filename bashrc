@@ -149,3 +149,8 @@ function _update_ps1() {
 if [ "$TERM" != "linux" ]; then
             PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+# Correct dir spellings
+shopt -q -s cdspell
+# Make sure display get updated when terminal window get resized
+shopt -q -s checkwinsize
+SHELL=/bin/bash
