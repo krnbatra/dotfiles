@@ -56,24 +56,24 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
+#if [ "$color_prompt" = yes ]; then
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
   #  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-    PS1='${debian_chroot:+($debian_chroot)}\w\$ '
-fi
-unset color_prompt force_color_prompt
+#    PS1='${debian_chroot:+($debian_chroot)}\w\$ '
+#fi
+#unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
+#case "$TERM" in
+#xterm*|rxvt*)
   #  PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
+#    ;;
+#*)
+#    ;;
+#esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -120,9 +120,10 @@ if ! shopt -oq posix; then
 fi
 
 # Enable tab completion
-source ~/UdacityGitTerminal/git-completion.bash
+#source ~/UdacityGitTerminal/git-completion.bash
 
 alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
 
 function _update_ps1() {
     PS1="$(~/powerline-shell.py $? 2> /dev/null)"
@@ -133,6 +134,5 @@ if [ "$TERM" != "linux" ]; then
 fi
 # Correct dir spellings
 shopt -q -s cdspell
-# Make sure display get updated when terminal window get resized
-shopt -q -s checkwinsize
-SHELL=/bin/bash
+#SHELL=/bin/bash
+shuf -n 1 gre | cowsay
