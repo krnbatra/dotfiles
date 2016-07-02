@@ -101,3 +101,4 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:clang_library_path='/usr/lib/llvm-3.4/lib'
+nnoremap <C-g> :NERDTreeToggle<CR>
