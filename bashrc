@@ -119,11 +119,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Enable tab completion
-#source ~/UdacityGitTerminal/git-completion.bash
-
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
+alias play='cvlc --play-and-exit ~/Favorites/'
 
 function _update_ps1() {
     PS1="$(~/powerline-shell.py $? 2> /dev/null)"
@@ -134,5 +132,4 @@ if [ "$TERM" != "linux" ]; then
 fi
 # Correct dir spellings
 shopt -q -s cdspell
-#SHELL=/bin/bash
-shuf -n 1 gre | cowsay
+#shuf -n 1 gre | cowsay
