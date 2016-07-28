@@ -51,10 +51,10 @@ nnoremap <c-q> :execute "normal! q!"<cr>
 " }}}
 " Vimscript insert mode mappings {{{
 inoremap jk <esc>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 " making letters of a word capital look i am using w instead of W
 inoremap <c-u> <esc>vwUi
 " }}}
