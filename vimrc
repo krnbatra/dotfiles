@@ -17,8 +17,7 @@ set number
 set relativenumber
 set wildmenu " visual autocomplete for command menu
 set showmatch "highligh matching [{()}]
-set incsearch " highlight the next result as characters are entered
-set hlsearch  " highlighting matches
+set incsearch " highlight the next result as characters are entered set hlsearch  " highlighting matches
 " }}}
 " Leader {{{
 let mapleader="\<Space>" 
@@ -102,3 +101,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:clang_library_path='/usr/lib/llvm-3.4/lib'
 nnoremap <C-g> :NERDTreeToggle<CR>
+set clipboard=unnamed

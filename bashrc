@@ -72,7 +72,7 @@ fi
 #    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
 #    ;;
 #*)
-#    ;;
+##    ;;
 #esac
 
 # enable color support of ls and also add handy aliases
@@ -120,8 +120,9 @@ if ! shopt -oq posix; then
 fi
 
 alias vimrc='vim ~/.vimrc'
-alias bashrc='vim ~/.bashrc'
+alias bashrc='subl ~/.bashrc'
 alias play='cvlc --play-and-exit ~/Favorites/'
+alias snippets='cd ~/.config/sublime-text-3/Packages/User/'
 
 function _update_ps1() {
     PS1="$(~/powerline-shell.py $? 2> /dev/null)"
@@ -129,6 +130,7 @@ function _update_ps1() {
 
 if [ "$TERM" != "linux" ]; then
             PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+
 fi
 # Correct dir spellings
 shopt -q -s cdspell
