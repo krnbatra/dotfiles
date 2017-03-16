@@ -7,8 +7,8 @@
 [push]
 	default = upstream
 [user]
-	email = <your_email_here>
-	name = <your_name_here>
+	email = karandeepbatra@gmail.com
+	name = Karan
 [credential]
 	helper = cache --timeout=3600
 [credentail]

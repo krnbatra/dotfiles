@@ -14,10 +14,5 @@ All the plugins are present in vim folder. For configuring your vimrc refer this
 ##### Dependencies - powerline-shell
 For installing powerline-shell refer these links. (http://www.linuxdeveloper.space/install-vim-powerline/), (http://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/).
 After that you can directly copy this bashrc file in your ~/.bashrc.
-![alt text][logo1] ![alt text][logo2] ![alt text][logo3] ![alt text][logo4]
-[logo1]: https://github.com/krnbatra/dotfiles/blob/master/TerminalSS/Terminal.png "Terminal"
-[logo2]: https://github.com/krnbatra/dotfiles/blob/master/TerminalSS/Vim_Insert.png "Vim Insert Mode"
-[logo3]: https://github.com/krnbatra/dotfiles/blob/master/TerminalSS/Vim_Normal.png "Vim Normal Mode"
-[logo4]: https://github.com/krnbatra/dotfiles/blob/master/TerminalSS/Vim_Replace.png "Vim Replace Mode"
 ### Tutorial on how to manage your dotfiles.
 (http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/).
